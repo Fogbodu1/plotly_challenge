@@ -75,7 +75,7 @@ function init (){
                       }
               };                       
 
-          var layout = { title: "Bacteria Cultures Per Sample",
+          var layout = { title: "Bacteria Cultures Per Sample", tickwidth: 1, tickcolor: "black",
                          xaxis: {title: 'OTU ID'},
                          height: 600,
                          width: 1000,
@@ -120,7 +120,7 @@ function gaugeChart(subjectID) {
             type: "indicator",
             mode: "gauge+number",
             value: wfreqValue,
-            title: { text: "Belly Button Washing                                        Frequency", font: { size: 18 } },
+            title: { text: "Belly Button Washing Frequency (Scrubs per Week)", font: { size: 18 } },
             gauge: {
               axis: { range: [null, 9], tickwidth: 1, tickcolor: "black" }, // Max value is 9
               bar: { color: "gray" },  
